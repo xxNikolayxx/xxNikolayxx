@@ -1,5 +1,5 @@
-from Task_24_7_2.api import PetFriends
-from Task_24_7_2.settings import valid_email, valid_password
+from 24_7_2.api import PetFriends
+from 24_7_2.settings import valid_email, valid_password
 import os
 
 pf = PetFriends()
@@ -169,4 +169,5 @@ def test_add_new_pet_with_special_symbols_name(name='!"№% :?*()[]{}/=+-\|', an
 
     # Сверяем полученный ответ с ожидаемым результатом
     assert status == 200
+
     assert result['name'] == name
